@@ -23,3 +23,7 @@ compileJava {
 application {
     mainClass = 'hexlet.code.App'
 }
+
+run {
+    standardInput = System.in
+}
