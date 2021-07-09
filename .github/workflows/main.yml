@@ -25,10 +25,9 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       - uses: actions/setup-java@v2
-          with:
-            distribution: 'adopt' # See 'Supported distributions' for available options
-            java-version: '15'
-
+        with:
+          distribution: 'adopt' # See 'Supported distributions' for available options
+          java-version: '15'
       # Runs a single command using the runners shell
       - name: Run build project
         run: make build
