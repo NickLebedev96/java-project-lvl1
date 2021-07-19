@@ -1,11 +1,10 @@
 package hexlet.code.games;
 
-import hexlet.code.Game;
 
 import java.util.Random;
 import java.util.Scanner;
 
-public class EvenGame implements Game {
+public class EvenGame {
 
     private final Scanner scanner;
     private static final Integer MAX_RANDOM_INT = 100;
@@ -17,8 +16,8 @@ public class EvenGame implements Game {
 
     /**
      * This method implements the game 'Even'.
+     * @param name - player's name
      */
-    @Override
     public void play(String name) {
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
         int tries = 0;

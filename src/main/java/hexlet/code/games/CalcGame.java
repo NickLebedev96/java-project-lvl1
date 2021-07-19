@@ -1,11 +1,9 @@
 package hexlet.code.games;
 
-import hexlet.code.Game;
-
 import java.util.Random;
 import java.util.Scanner;
 
-public class CalcGame implements Game {
+public class CalcGame {
 
     private final Scanner scanner;
 
@@ -19,8 +17,8 @@ public class CalcGame implements Game {
 
     /**
      * This method implements the game 'Calc'.
+     * @param name - player's name
      */
-    @Override
     public void play(String name) {
         System.out.println("What is the result of the expression?");
         int tries = 0;

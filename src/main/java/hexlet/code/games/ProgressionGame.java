@@ -1,11 +1,9 @@
 package hexlet.code.games;
 
-import hexlet.code.Game;
-
 import java.util.Random;
 import java.util.Scanner;
 
-public class ProgressionGame implements Game {
+public class ProgressionGame {
     private final Scanner scanner;
 
     private static final Integer MAX_RANDOM_INT = 40;
@@ -19,8 +17,8 @@ public class ProgressionGame implements Game {
 
     /**
      * This method implements the game 'Progression'.
+     * @param name - player's name
      */
-    @Override
     public void play(String name) {
         System.out.println("Find the greatest common divisor of given numbers.");
         int tries = 0;

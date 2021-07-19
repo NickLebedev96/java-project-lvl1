@@ -1,13 +1,11 @@
 package hexlet.code.games;
 
-import hexlet.code.Game;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
-public class PrimeGame implements Game {
+public class PrimeGame {
     private final Scanner scanner;
 
     private static final Integer MAX_RANDOM_INT = 100;
@@ -20,8 +18,8 @@ public class PrimeGame implements Game {
 
     /**
      * This method implements the game 'Prime'.
+     * @param name - player's name
      */
-    @Override
     public void play(String name) {
         System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
         int tries = 0;

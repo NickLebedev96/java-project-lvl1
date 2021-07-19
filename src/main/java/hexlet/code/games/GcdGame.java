@@ -1,7 +1,5 @@
 package hexlet.code.games;
 
-import hexlet.code.Game;
-
 import java.util.Scanner;
 import java.util.Random;
 import java.util.List;
@@ -9,7 +7,7 @@ import java.util.Comparator;
 import java.util.ArrayList;
 
 
-public class GcdGame implements Game {
+public class GcdGame {
     private static final Integer MAX_RANDOM_INT = 100;
     private static final Integer MAX_TRIES = 3;
 
@@ -21,8 +19,8 @@ public class GcdGame implements Game {
 
     /**
      * This method implements the game 'GCD'.
+     * @param name - player's name
      */
-    @Override
     public void play(String name) {
         System.out.println("Find the greatest common divisor of given numbers.");
         int tries = 0;

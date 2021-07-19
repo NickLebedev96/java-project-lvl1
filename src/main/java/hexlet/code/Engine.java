@@ -1,6 +1,5 @@
 package hexlet.code;
 
-import hexlet.code.games.GreetGame;
 import hexlet.code.games.EvenGame;
 import hexlet.code.games.ExitGame;
 import hexlet.code.games.CalcGame;
@@ -24,42 +23,39 @@ public class Engine {
      * Creates the game.
      */
     public void run() {
-        Game game;
-        String playerName = "";
+        String playerName;
         switch (gameNumber) {
             case "1":
                 Cli.welcome(scanner);
-                game = new GreetGame();
                 break;
 
             case "2":
                 playerName = Cli.welcome(scanner);
-                game = new EvenGame(scanner);
+                new EvenGame(scanner).play(playerName);
                 break;
 
             case "3":
                 playerName = Cli.welcome(scanner);
-                game = new CalcGame(scanner);
+                new CalcGame(scanner).play(playerName);
                 break;
 
             case "4":
                 playerName = Cli.welcome(scanner);
-                game = new GcdGame(scanner);
+                new GcdGame(scanner).play(playerName);
                 break;
 
             case "5":
                 playerName = Cli.welcome(scanner);
-                game = new ProgressionGame(scanner);
+                new ProgressionGame(scanner).play(playerName);
                 break;
 
             case "6":
                 playerName = Cli.welcome(scanner);
-                game = new PrimeGame(scanner);
+                new PrimeGame(scanner).play(playerName);
                 break;
 
             default:
-                game = new ExitGame();
+                new ExitGame();
         }
-        game.play(playerName);
     }
 }

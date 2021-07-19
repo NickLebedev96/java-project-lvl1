@@ -1,10 +1,11 @@
 package hexlet.code.games;
 
-import hexlet.code.Game;
+public class ExitGame {
 
-public class ExitGame implements Game {
-
-    @Override
+    /**
+     * Just exit from app.
+     * @param name - player's name
+     */
     public void play(String name) {
         // Do nothing
     }
