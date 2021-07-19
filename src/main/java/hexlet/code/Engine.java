@@ -5,6 +5,7 @@ import hexlet.code.games.EvenGame;
 import hexlet.code.games.ExitGame;
 import hexlet.code.games.CalcGame;
 import hexlet.code.games.GcdGame;
+import hexlet.code.games.ProgressionGame;
 
 
 import java.util.Scanner;
@@ -43,6 +44,11 @@ public class Engine {
             case "4":
                 playerName = Cli.welcome(scanner);
                 game = new GcdGame(scanner);
+                break;
+
+            case "5":
+                playerName = Cli.welcome(scanner);
+                game = new ProgressionGame(scanner);
                 break;
 
             default:

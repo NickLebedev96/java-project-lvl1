@@ -20,7 +20,7 @@ public class GcdGame implements Game {
     }
 
     /**
-     * This method implements the game 'Even'.
+     * This method implements the game 'GCD'.
      */
     @Override
     public void play(String name) {
