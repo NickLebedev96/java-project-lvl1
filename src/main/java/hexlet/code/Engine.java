@@ -6,6 +6,7 @@ import hexlet.code.games.ExitGame;
 import hexlet.code.games.CalcGame;
 import hexlet.code.games.GcdGame;
 import hexlet.code.games.ProgressionGame;
+import hexlet.code.games.PrimeGame;
 
 
 import java.util.Scanner;
@@ -49,6 +50,11 @@ public class Engine {
             case "5":
                 playerName = Cli.welcome(scanner);
                 game = new ProgressionGame(scanner);
+                break;
+
+            case "6":
+                playerName = Cli.welcome(scanner);
+                game = new PrimeGame(scanner);
                 break;
 
             default:
