@@ -2,7 +2,12 @@ package hexlet.code.games;
 
 import hexlet.code.Game;
 
-import java.util.*;
+import java.util.Scanner;
+import java.util.Random;
+import java.util.List;
+import java.util.Comparator;
+import java.util.ArrayList;
+
 
 public class GcdGame implements Game {
     private static final Integer MAX_RANDOM_INT = 100;
@@ -14,6 +19,9 @@ public class GcdGame implements Game {
         this.scanner = scan;
     }
 
+    /**
+     * This method implements the game 'Even'.
+     */
     @Override
     public void play(String name) {
         System.out.println("Find the greatest common divisor of given numbers.");
@@ -29,7 +37,7 @@ public class GcdGame implements Game {
             System.out.print("Your answer: ");
             final int answer = scanner.nextInt();
             final Integer gcd = gcd(firstNumber, secondNumber);
-            if(answer == gcd){
+            if (answer == gcd) {
                 System.out.println("Correct!");
                 tries++;
             } else {
